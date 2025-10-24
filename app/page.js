@@ -11,7 +11,7 @@ export default function Home() {
           width={200}
           height={200}
           style={{
-            borderRadius: "12px"
+            borderRadius: "5px"
           }}
         />
         <div className={styles.header_text}>
@@ -31,6 +31,11 @@ export default function Home() {
         </div>
       </div>
       <h2>Publications</h2>
+      <Publication
+        name="FlowLog: Efficient and Extensible Datalog via Incrementality"
+        authorlist="Hangdong Zhao, Zhenghong Yu, Srinag Rao, Simon Frisk, Zhiwei Fan, Paraschos Koutris"
+        venue="VLDB 2026"
+      />
       <Publication
         name="Parallel Query Processing with Heterogeneous Machines"
         authorlist="Simon Frisk, Paraschos Koutris"

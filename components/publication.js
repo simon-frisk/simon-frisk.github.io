@@ -2,9 +2,7 @@
 export default function Publication({name, authorlist, venue, paper, arxiv}) {
     return (
         <div style={{
-            // background: "#fafafa",
-            padding: "10px",
-            marginTop: "10px",
+            paddingTop: "15px",
         }}>
             <div
                 style={{
@@ -14,20 +12,24 @@ export default function Publication({name, authorlist, venue, paper, arxiv}) {
             >
                 <h4>{name}</h4>
                 <div>
-                    <a
+                    {paper && (
+                        <a
                         href={paper}
                         style={{
                             color: "blue",
                             margin: "5px"
                         }}
                         >Paper</a>
-                    <a
+                    )}
+                    {arxiv && (
+                        <a
                         href={arxiv}
                         style={{
                             color: "brown",
                             margin: "5px"
                         }}
-                    >Arxiv</a>
+                        >Arxiv</a>
+                    )}
                 </div>
             </div>
             <div>
