@@ -35,6 +35,7 @@ export default function Home() {
         name="FlowLog: Efficient and Extensible Datalog via Incrementality"
         authorlist="Hangdong Zhao, Zhenghong Yu, Srinag Rao, Simon Frisk, Zhiwei Fan, Paraschos Koutris"
         venue="VLDB 2026"
+        arxiv="https://arxiv.org/abs/2511.00865"
       />
       <Publication
         name="Parallel Query Processing with Heterogeneous Machines"
