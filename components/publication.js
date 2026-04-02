@@ -1,41 +1,36 @@
  
-export default function Publication({name, authorlist, venue, paper, arxiv}) {
+import styles from "./publication.module.css";
+
+export default function Publication({name, authorlist, venue, paper, arxiv, website}) {
     return (
-        <div style={{
-            paddingTop: "15px",
-        }}>
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "space-between"
-                }}
-            >
-                <h4>{name}</h4>
-                <div>
+        <article className={styles.item}>
+            <div className={styles.titleRow}>
+                <h4 className={styles.title}>{name}.</h4>
+                <div className={styles.links}>
                     {paper && (
                         <a
                         href={paper}
-                        style={{
-                            color: "blue",
-                            margin: "5px"
-                        }}
+                        className={styles.paperLink}
                         >Paper</a>
                     )}
                     {arxiv && (
                         <a
                         href={arxiv}
-                        style={{
-                            color: "brown",
-                            margin: "5px"
-                        }}
+                        className={styles.arxivLink}
                         >Arxiv</a>
+                    )}
+                    {website && (
+                        <a
+                        href={website}
+                        className={styles.websiteLink}
+                        >Website</a>
                     )}
                 </div>
             </div>
-            <div>
-                <p>{authorlist}</p>
-                <p>{venue}</p>
-            </div>
-        </div>
+            <p className={styles.metaLine}>
+                <span>{authorlist}</span>
+                {venue && <span className={styles.venue}>. {venue}</span>}
+            </p>
+        </article>
     )
 }

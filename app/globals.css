@@ -1,6 +1,10 @@
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --surface: #ffffff;
+  --foreground: #000000;
+  --line: #e5e5e5;
+  --accent: #0b57d0;
+  --accent-strong: #0842a0;
 }
 
 html,
@@ -12,7 +16,8 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--font-body), "Avenir Next", "Segoe UI", sans-serif;
+  line-height: 1.52;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -24,10 +29,33 @@ body {
 }
 
 a {
-  color: blue;
+  color: var(--accent);
   text-decoration: none;
 }
 
 a:hover {
+  color: var(--accent-strong);
   text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading), Georgia, serif;
+  letter-spacing: 0.01em;
+}
+
+.site-shell {
+  width: min(960px, 88vw);
+  margin: 24px auto 34px;
+  padding: 4px 2px;
+}
+
+@media (max-width: 800px) {
+  .site-shell {
+    width: 94vw;
+    margin-top: 14px;
+    padding: 2px 1px;
+  }
 }

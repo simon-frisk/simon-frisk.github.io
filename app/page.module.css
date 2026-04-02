@@ -1,24 +1,72 @@
 
 
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #EEE;
+  align-items: stretch;
+  gap: 22px;
+  padding: 2px 0 12px;
+  border-bottom: 1px solid var(--line);
 }
 
 .header_text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 8px;
+}
+
+.portrait {
+  border-radius: 4px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+}
+
+.name {
+  margin-bottom: 5px;
+  font-size: clamp(1.9rem, 2.8vw, 2.3rem);
+  line-height: 1.1;
+}
+
+.bio {
+  max-width: 66ch;
+  color: var(--foreground);
+  font-size: 1rem;
+}
+
+.contactBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.researchSection h2 {
+  font-size: clamp(1.35rem, 2vw, 1.6rem);
+  margin-bottom: 2px;
 }
 
 @media (max-width: 800px) {
   .header {
     flex-direction: column;
+    gap: 12px;
+    padding-bottom: 12px;
+  }
+
+  .portrait {
+    width: 170px;
+    height: 170px;
+  }
+
+  .bio {
+    max-width: 100%;
   }
 }
 
