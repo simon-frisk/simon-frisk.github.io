@@ -7,7 +7,7 @@ export default function Home() {
     <main className={styles.page}>
       <div className={styles.header}>
         <Image
-          src="/pic.png"
+          src="/IMG_1429.png"
           width={200}
           height={200}
           alt="Portrait Picture"
@@ -35,6 +35,7 @@ export default function Home() {
         <Publication
           name="One Join Order Does Not Fit All: Reducing Intermediate Results with Per-Split Query Plans"
           authorlist="Yujun He, Hangdong Zhao, Simon Frisk, Yifei Yang, Kevin Kristensen, Paraschos Koutris, Xiangyao Yu"
+          venue="VLDB 2026"
           arxiv="https://arxiv.org/abs/2510.25684"
         />
         <Publication
