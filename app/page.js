@@ -28,9 +28,20 @@ export default function Home() {
       <section className={styles.researchSection}>
         <h2>Research</h2>
         <Publication
+          name="Conjunctive Queries with Negation: Beyond Signed-Acyclicity"
+          authorlist="Simon Frisk, Paraschos Koutris"
+          venue="PODS 2027"
+        />
+        <Publication
           name="𝜅-Join: Combining Vertex Covers for Parallel Joins"
           authorlist="Simon Frisk, Austen Fan, Paraschos Koutris"
+          venue="PODS 2027"
           arxiv="https://arxiv.org/abs/2603.10177"
+        />
+        <Publication
+          name="Optimal Convergence of Iterative Methods for Datalogo"
+          authorlist="Simon Frisk, Hangdong Zhao, Hung Ngo, Kirk Pruhs, Benjamin Moseley, Sungjin Im, Paraschos Koutris"
+          venue="PODS 2027"
         />
         <Publication
           name="One Join Order Does Not Fit All: Reducing Intermediate Results with Per-Split Query Plans"
