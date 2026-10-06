@@ -31,6 +31,7 @@ export default function Home() {
           name="Conjunctive Queries with Negation: Beyond Signed-Acyclicity"
           authorlist="Simon Frisk, Paraschos Koutris"
           venue="PODS 2027"
+          arxiv="https://arxiv.org/abs/2610.03982"
         />
         <Publication
           name="𝜅-Join: Combining Vertex Covers for Parallel Joins"
@@ -42,11 +43,13 @@ export default function Home() {
           name="Optimal Convergence of Iterative Methods for Datalogo"
           authorlist="Simon Frisk, Hangdong Zhao, Hung Ngo, Kirk Pruhs, Benjamin Moseley, Sungjin Im, Paraschos Koutris"
           venue="PODS 2027"
+          arxiv="https://arxiv.org/abs/2610.04062"
         />
         <Publication
           name="One Join Order Does Not Fit All: Reducing Intermediate Results with Per-Split Query Plans"
           authorlist="Yujun He, Hangdong Zhao, Simon Frisk, Yifei Yang, Kevin Kristensen, Paraschos Koutris, Xiangyao Yu"
           venue="VLDB 2026"
+          paper="https://dl.acm.org/doi/10.14778/3819518.3819533"
           arxiv="https://arxiv.org/abs/2510.25684"
         />
         <Publication
